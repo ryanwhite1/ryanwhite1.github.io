@@ -2133,7 +2133,30 @@ input, select, textarea {
 	}
 
 /* Header */
-
+	/*Image help from Hamish and https://stackoverflow.com/questions/69600315/how-to-make-text-next-to-an-image*/
+	.imageflex { 
+		display: flex; 
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.imageflex img { 
+		padding-right: 45px;
+	}
+	.imageflexcontent { 
+		margin-left: 5px; 
+		margin-top: 0; 
+		text-align: center;
+	}
+	.profile {
+		display: inline-block;
+		float: left;
+		width: 15%;
+		/* margin-left: 60px; */
+		/* margin-right: 100%; */
+		/* position: absolute; */
+		/* padding-right: 10%; */
+	}
 	#logo {
 		position: absolute;
 		z-index: 1;
