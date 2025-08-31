@@ -66,27 +66,31 @@
 								<!-- Content -->
 									<article id="content">
 										<header>
-											<h2>Data Visualisation Used in my Research</h2>
+											<h2>Data Visualisation From My Studies</h2>
 											<p>
-												I've been doing astrophysics research for several years; that's a lot of time to make some cool plots of our Universe.
+												I did a double degree in Science and Mathematics, majoring in Physics and Applied Mathematics. As part of that, you make a fair few plots!
 											</p>
 										</header>
-										<h3>
-											Colliding Wind Binaries
-										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/slice_density.png" alt="" /></a>
+										<!-- <h3>
+											Astrophysics
+										</h3> -->
 										<p>
-											Most of my research so far has focused on the powerful <a href="https://arxiv.org/abs/2412.12534" style="color:maroon">colliding wind binaries</a>.
-											In these systems, the winds of two closely orbiting massive stars collide. The wind of one star overpowers the other, forming a bow shock which
-											condenses the wind and proceeds to copiously form carbon dust. The image above shows a snapshot of a hydrodynamic simulation of exactly this. The 
-											coloured regions show the gas density in a 2D slice around the binary stars at the centre. You can see regions of high density even quite far out, and 
-											this shows us that dust can live in dense clumps for a long while after formation.  
+											One of the most versatile tools in an astronomer's toolbox is Markov Chain Monte Carlo. This is a way to infer the optimal parameters given a model to fit
+											to some data, while simultaneously recovering your uncertainties in your parameter values. How this works is you have a series of 'walkers' which move around 
+											your parameter space and evaluate your model fit to the data given those parameters (below animation, bottom right panel). The walkers tend to move into regions
+											of higher parameter likelihood, and so your 'spatial' density of parameter evaluations gives a posterior distribution for your parameter values (below animation,
+											bottom left panels). Given enough steps, your mean or median posterior values gives you the best fit to your data (below animation, top panel).   
+										</p>
+										<a href="files/Visualisations/Undergrad/PHYS3080/Data0 MCMC Animation.gif" class="image featured"><img src="files/Visualisations/Undergrad/PHYS3080/Data0 MCMC Animation.gif" alt="" /></a>
+										<p>
+											I must have an affinity for animations, because my next visualisation to share shows how the power spectrum of the cosmic microwave background is sensitive 
+											to the baryonic and cold dark matter content of the Universe.
 										</p>
 										<p>
 											If we plot the same simulation as above, but look at the <i>projected</i> density of the dust from 3D space to 2D space (rather than a 2D slice),
 											we see this:
 										</p>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/column_density.png" alt="" /></a>
+										<a href="files/Visualisations/Undergrad/PHYS4080/TTPowerSpectrum.gif" class="image featured"><img src="files/Visualisations/Undergrad/PHYS4080/TTPowerSpectrum.gif" alt="" /></a>
 										<p>
 											You can immediately see that the dust formed is extremely 'fluffy' which matches closely real images that powerful telescopes have taken of
 											these systems.
@@ -95,22 +99,9 @@
 											In a 3D hydrodynamics simulation with similar parameters, we produced an animation of the orbital evolution of the stars (this time a 2D density slice). 
 											This shows us how the conditions of dust formation change across the orbit.
 										</p>
-										<a class="image featured"><video width="600" controls><source src="files/Visualisations/Research Visualisations/CWBs/peri-movie (1).mp4" alt="" type="video/mp4">></video></a>
-										<p>
-
-										</p>
-										<h3>
-											Supernova Time Dilation
-										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/StretchPlot-1303317-z0.47545.png" alt="" /></a>
-										<h3>
-											Merging Binary Black Holes Around Supermassive Black Holes
-										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/BHs/NBody_a-e_Plot.png" alt="" /></a>
-										<h3>
-											Long-Period Radio Transient Detection
-										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/uv-movie-DGA.gif" alt="" /></a>
+										
+										<a class="image featured"><img src="files/Visualisations/Undergrad/PHYS3080/Spacetime Diagram.png" alt="" /></a>
+										<a class="image featured"><img src="files/Visualisations/Undergrad/PHYS3080/isotropy.png" alt="" /></a>
 									</article>
 
 							</div>
@@ -119,48 +110,35 @@
 								<!-- Sidebar -->
 									<section id="sidebar">
 										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/orbit_spiral.gif" alt="" /></a>
+											<a href="files/Visualisations/Undergrad/PHYS4080/ColdCollapse.gif" class="image featured"><img src="files/Visualisations/Undergrad/PHYS4080/ColdCollapse.gif" alt="" /></a>
 											<!-- <header>
 												<h3>Elit sed feugiat</h3>
 											</header> -->
 											<p>
-												Colliding wind binaries are extremely dynamic and change appearance over orbital timescales. Here I show, using my 
-												<a href="https://ryanwhite1.github.io/xenomorph/" style="color:maroon">xenomorph</a> python package, how the orbiting 
-												of the stars can impact colliding wind nebulae.
+												This is an N-body simulation, made with <a href="https://ui.adsabs.harvard.edu/abs/2021JOSS....6.3675G/abstract" style="color:maroon">pytreegrav</a> beginning with particles distributed uniformly (randomly) in a sphere, coloured based on their initial radius. After some time, 
+												the system collapses and thermalises; you can see most of the central particles at the end are orange-to-red, as they began with less energy and remain deeper in the potential well. 
 											</p>
 											<!-- <ul class="actions">
 												<li><a href="#" class="button">Magna amet nullam</a></li>
 											</ul> -->
 										</section>
 										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/Apep_evolution_pretty.gif" alt="" /></a>
+											<a href="files/Visualisations/Undergrad/PHYS3080/Data7 MCMC Corner Plot.png" class="image featured"><img src="files/Visualisations/Undergrad/PHYS3080/Data7 MCMC Corner Plot.png" alt="" /></a>
 											<!-- <header>
 												<h3>Elit sed feugiat</h3>
 											</header> -->
 											<p>
-												The system that I've studied the most is the <a href="https://en.wikipedia.org/wiki/Apep_(star_system)" style="color:maroon">Apep system</a>. 
-												In my <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250714610W/abstract" style="color:maroon">recent paper</a> on the system, we figured
-												out the best yet orbital solution of the WR+WR binary. Using xenomorph, we can then simulate the orbital evolution of the stars and the nebula they create.
+												This is one of my favourite types of plots — a 'corner plot' made with <a href="https://corner.readthedocs.io/en/latest/" style="color:maroon">corner</a>, which shows how
+												the posterior distributions of parameters are covariant with each other. This plot is for a similar problem as in the top left animation on this page (fitting the cosmological
+												parameters given supernova data), although with many more walkers, steps, and parameters in the MCMC. The purple lines show the parameter <i>maximum a posteriori</i>, 
+												while the red lines show the posterior means (with the dashed lines one sigma either side of the mean). 
 											</p>
 											<!-- <ul class="actions">
 												<li><a href="#" class="button">Magna amet nullam</a></li>
 											</ul> -->
 										</section>
 										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/Apep_Rotate_Gif.gif" alt="" /></a>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
-											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
-											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
-										</section>
-										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/BHs/MigrationTraps-alph0.01.png" alt="" /></a>
+											<p align="center"><a class="image featured"><video width="350" controls><source src="files/Visualisations/Undergrad/COSC3000/Blender_Animation.mp4" alt="" type="video/mp4">></video></a></p>
 											<!-- <header>
 												<h3>Elit sed feugiat</h3>
 											</header> -->
@@ -173,7 +151,7 @@
 											</ul> -->
 										</section>
 										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/BHs/BH_Effective_Spins.png" alt="" /></a>
+											<a href="files/Visualisations/Undergrad/COSC3000/Launch-Price-Years.png" class="image featured"><img src="files/Visualisations/Undergrad/COSC3000/Launch-Price-Years.png" alt="" /></a>
 											<!-- <header>
 												<h3>Elit sed feugiat</h3>
 											</header> -->
