@@ -102,15 +102,50 @@
 										<h3>
 											Supernova Time Dilation
 										</h3>
+										<p>
+											My <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.533.3365W/abstract" style="color:maroon">first academic paper</a> was all about a unique way we can measure the expansion of the Universe:
+											time dilation! I go into much more detail <a href="time-dilation.html" style="color:maroon">on this page</a>, but in essence we use the light curves (brightness vs time) of
+											~1500 supernovae across cosmic distance to measure how they get slower the further you get away (exactly as expected by special relativity).
+										</p>
 										<a class="image featured"><img src="files/Visualisations/Research Visualisations/StretchPlot-1303317-z0.47545.png" alt="" /></a>
+										<p>
+											The above plot shows the gist of our method. The tl;dr is that we use a select few of the 1499 supernovae to then compare to the other <i>one</i> to see how much wider it is compared to what we expect.
+											The left panel shows how we select special supernovae out of the 1499: each black dot in the vertical line is a supernova, and wherever those dots cross a coloured band, we can 
+											use the supernova observed in that colour to compare to our special <i>one</i> supernova. The supernovae which cross these bands make up the 'reference photometry' in the right panel. 
+											The 'target photometry' is the data of our special <i>one</i> supernova, and you can see by its raw blue data that it's wider than the reference photometry curve. Our model then
+											scales it down in time (black points) to best match the reference, and how much we scale it tells us how time dilated it is. We go on to do that for all 1500 supernovae individually,
+											and voila! that's our measurement of the expansion of the Universe.
+										</p>
 										<h3>
 											Merging Binary Black Holes Around Supermassive Black Holes
 										</h3>
+										<p>
+											A particularly fun research project I did — at Swinburne University with Dr Simon Stevenson — was all about simulating how stellar mass black holes merge when swirling
+											around a much larger supermassive black hole (SMBH). For this project, I developed a significant extension to the open-source code Rebound to model numerical relativity
+											during an N-body simulation of many black holes. You can see some of our preliminary results below.
+										</p>
 										<a class="image featured"><img src="files/Visualisations/Research Visualisations/BHs/NBody_a-e_Plot.png" alt="" /></a>
+										<p>
+											This plot shows the results of one of our simulations. Each line here represents a single black hole, where all of these are orbiting in a gaseous disk around a SMBH.
+											The top panel shows that small BHs start far out and migrate inwards in the disk, towards a 'migration trap' (see figure in the right sidebar of the page for more info).
+											As many black holes swirl inwards, they interact and some merge (represented by a dashed vertical line, where the numbers show the initial and final mass of the merged BH).
+											The bottom panel shows the orbital eccentricity of each BH — overall, very circular! After each merger or interaction there is a perturbation to orbital eccentricities, though.
+											Overall, we found that this is a very efficient channel to merge BHs!
+										</p>
 										<h3>
 											Long-Period Radio Transient Detection
 										</h3>
+										<p>
+											I was very lucky to begin the development of a transient-searching pipeline with Dr Andrew Zic at CSIRO. More and more, astronomers are finding radio transients with periods
+											of minutes or more, and we need a systematic way to search for these. Our idea was to use interferometric visibilities of the telescope arrays directly, rather than going
+											through an imaging step first — this saves orders of magnitude of computational cost. 
+										</p>
 										<a class="image featured"><img src="files/Visualisations/Research Visualisations/uv-movie-DGA.gif" alt="" /></a>
+										<p>
+											The above animation shows one step of our pipeline. The left pattern is a u-v diagram, which rotates as the telescope is observing the sky for hours. Our method involves
+											looking at all of the u-v pixels that are ever occupied, then using the time series data of each of those pixels to search for periodic jumps in brightness of stars. 
+										</p>
+										<br>
 									</article>
 
 							</div>
@@ -165,8 +200,9 @@
 												<h3>Elit sed feugiat</h3>
 											</header> -->
 											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
+												A proposed way of efficiently merging binary black holes is that there may be huge populations of small black holes embedded in the accretion disks of supermassive black holes.
+												The small BHs moving in the disk experience 'drag' forces which pull them inwards towards migration traps; over time, many BHs end up here and you get a chain reaction of mergers.
+												This plot shows our calculated location of the migration trap (colour - in distance from the SMBH) given different disk parameters and SMBH masses.
 											</p>
 											<!-- <ul class="actions">
 												<li><a href="#" class="button">Magna amet nullam</a></li>
@@ -178,8 +214,10 @@
 												<h3>Elit sed feugiat</h3>
 											</header> -->
 											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
+												We can learn a lot about binary black hole mergers from their gravitational wave signatures, including the mass ratio of the merging BHs and their 'spins'. The shaded region in 
+												this plot shows the observed mass ratio to spin distribution of the LIGO/VIRGO/KAGRA O3 run. Each dot represents the results from an N-body simulation of mine, showing that we 
+												can explain a lot of the observed mergers with the AGN channel of BBH mergers. The colour represents how many hierarchical mergers have taken place for each BH, namely that 
+												highly spinning BHs have usually merged many times! 
 											</p>
 											<!-- <ul class="actions">
 												<li><a href="#" class="button">Magna amet nullam</a></li>
