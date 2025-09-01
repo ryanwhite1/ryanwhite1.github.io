@@ -83,24 +83,26 @@
 										</p>
 										<a href="files/Visualisations/Undergrad/PHYS3080/Data0 MCMC Animation.gif" class="image featured"><img src="files/Visualisations/Undergrad/PHYS3080/Data0 MCMC Animation.gif" alt="" /></a>
 										<p>
-											I must have an affinity for animations, because my next visualisation to share shows how the power spectrum of the cosmic microwave background is sensitive 
-											to the baryonic and cold dark matter content of the Universe.
-										</p>
-										<p>
-											If we plot the same simulation as above, but look at the <i>projected</i> density of the dust from 3D space to 2D space (rather than a 2D slice),
-											we see this:
+											I must have an affinity for animations, because my next visualisation to share shows how the power spectrum of the Cosmic Microwave Background is sensitive 
+											to the baryonic and cold dark matter content of the Universe. Each line shows the strength of features in the Cosmic Microwave Background in relation to their length
+											scale on the sky. For all of our tested parameters, there's always a prominent bump around the 100 multipole moment — characteristic of the Baryon Acoustic Oscillations —
+											but changing the parameters sensitively changes the bumps on smaller angular scales (which is how we can precisely determine these parameters when comparing to observations!).
 										</p>
 										<a href="files/Visualisations/Undergrad/PHYS4080/TTPowerSpectrum.gif" class="image featured"><img src="files/Visualisations/Undergrad/PHYS4080/TTPowerSpectrum.gif" alt="" /></a>
 										<p>
-											You can immediately see that the dust formed is extremely 'fluffy' which matches closely real images that powerful telescopes have taken of
-											these systems.
+											While still on the topic of cosmology, the below plot shows a spacetime diagram of our Universe. This shows the causal relationship of events across space (x-axis) and time (y-axis),
+											given the expansion of the Universe as dictated by the cosmological parameters. The particle horizon (green line) shows the maximum distance that light can travel from our position
+											since the beginning of the Universe; the red line (the event horizon) shows the region of space in which light could *ever* interact with us at our spatial position; the 
+											purple line (the light cone) shows the region of spacetime that is potentially interacting with us right now; and the Hubble sphere shows the region of space that is 
+											expanding away from us at the speed of light.  
 										</p>
-										<p>
-											In a 3D hydrodynamics simulation with similar parameters, we produced an animation of the orbital evolution of the stars (this time a 2D density slice). 
-											This shows us how the conditions of dust formation change across the orbit.
-										</p>
-										
 										<a class="image featured"><img src="files/Visualisations/Undergrad/PHYS3080/Spacetime Diagram.png" alt="" /></a>
+										<p>
+											The below plot is one that I am particularly fond of, and made custom for myself (there's no standard way to make this in matplotlib!). The domain of the plot is the 
+											entire sky — since we're projecting a sphere onto a rectangle, there is significant warping near the poles (top and bottom of the rectangle). Each rectangle in this plot 
+											subtends and equal angular area in the sky, so by counting the number of galaxy clusters in each cell this way we're intrinsically accounting for projection effects. The 
+											result is a more-or-less isotropic distribution of galaxy clusters (in simulated data) — exactly as we'd expect in our Universe!
+										</p>
 										<a class="image featured"><img src="files/Visualisations/Undergrad/PHYS3080/isotropy.png" alt="" /></a>
 									</article>
 
@@ -139,29 +141,18 @@
 										</section>
 										<section>
 											<p align="center"><a class="image featured"><video width="350" controls><source src="files/Visualisations/Undergrad/COSC3000/Blender_Animation.mp4" alt="" type="video/mp4">></video></a></p>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
 											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
+												As part of a graphics and visualisation computer course I took at UQ, I learned Blender in 3 days to make this animation of spacecraft docking and performing a rocket 
+												burn in microgravity. It's a little rough around the edges, but it was super fulfilling to learn 3D modelling, animation, fluid simulation, and ray-tracing techniques 
+												for this project. 
 											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
 										</section>
 										<section>
 											<a href="files/Visualisations/Undergrad/COSC3000/Launch-Price-Years.png" class="image featured"><img src="files/Visualisations/Undergrad/COSC3000/Launch-Price-Years.png" alt="" /></a>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
 											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
+												As part of the same course as above, a very early data visualisation made in my studies shows a cool correlation between the number of rocket launches by private launch providers
+												and their cost per mass to orbit. This represents the economy of scale of the spaceflight industry, and the continued research and development of launch techniques. 
 											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
 										</section>
 									</section>
 
