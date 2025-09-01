@@ -66,124 +66,52 @@
 								<!-- Content -->
 									<article id="content">
 										<header>
-											<h2>Data Visualisation Used in my Research</h2>
+											<h2>Misc Data Visualisations Of Mine</h2>
 											<p>
-												I've been doing astrophysics research for several years; that's a lot of time to make some cool plots of our Universe.
+												Across teaching and random side projects I've made some interesting plots too!
 											</p>
 										</header>
 										<h3>
-											Colliding Wind Binaries
+											A Pedagogical Simulated Universe
 										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/slice_density.png" alt="" /></a>
+										<a href="files/Visualisations/Other/Simulated Universe/Local Galaxy HR Diagram.png" class="image featured"><img src="files/Visualisations/Other/Simulated Universe/Local Galaxy HR Diagram.png" alt="" /></a>
 										<p>
-											Most of my research so far has focused on the powerful <a href="https://arxiv.org/abs/2412.12534" style="color:maroon">colliding wind binaries</a>.
-											In these systems, the winds of two closely orbiting massive stars collide. The wind of one star overpowers the other, forming a bow shock which
-											condenses the wind and proceeds to copiously form carbon dust. The image above shows a snapshot of a hydrodynamic simulation of exactly this. The 
-											coloured regions show the gas density in a 2D slice around the binary stars at the centre. You can see regions of high density even quite far out, and 
-											this shows us that dust can live in dense clumps for a long while after formation.  
-										</p>
-										<p>
-											If we plot the same simulation as above, but look at the <i>projected</i> density of the dust from 3D space to 2D space (rather than a 2D slice),
-											we see this:
-										</p>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/column_density.png" alt="" /></a>
-										<p>
-											You can immediately see that the dust formed is extremely 'fluffy' which matches closely real images that powerful telescopes have taken of
-											these systems.
-										</p>
-										<p>
-											In a 3D hydrodynamics simulation with similar parameters, we produced an animation of the orbital evolution of the stars (this time a 2D density slice). 
-											This shows us how the conditions of dust formation change across the orbit.
-										</p>
-										<a class="image featured"><video width="600" controls><source src="files/Visualisations/Research Visualisations/CWBs/peri-movie (1).mp4" alt="" type="video/mp4">></video></a>
-										<p>
-
+											One of my proudest achievements so far is programming a simulated universe in Python (from scratch!) for us to use in teaching a cosmological distance ladder
+											in the PHYS3080 course at UQ — you can read more about it <a href="simulated_universe.html" style="color:maroon">here</a>. As part of this simulation, we 
+											create different populations of stars which is well visualised on a Hertzsprung-Russell diagram. The blackbody colour of each star (as given by its temperature) 
+											is also plotted, which very clearly represents what each species of star would look like. The points plotted as triangles also show regions of stellar variability, 
+											in this case well separated into two bands. 
 										</p>
 										<h3>
-											Supernova Time Dilation
+											A Preferential Voting Calculator
 										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/StretchPlot-1303317-z0.47545.png" alt="" /></a>
-										<h3>
-											Merging Binary Black Holes Around Supermassive Black Holes
-										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/BHs/NBody_a-e_Plot.png" alt="" /></a>
-										<h3>
-											Long-Period Radio Transient Detection
-										</h3>
-										<a class="image featured"><img src="files/Visualisations/Research Visualisations/uv-movie-DGA.gif" alt="" /></a>
+										<p>
+											After moving to a new city in 2025, I was interested in learning about my new federal electorate. I was lured to the Wikipedia page of Bradfield, Sydney, and fell
+											into a rabbit hole of voting algorithms. Immediately I knew that I had to program my own calculator for preferential, or instant-runoff voting. You can access my 
+											code repository for my implementation <a href="https://github.com/ryanwhite1/preferential-voting" style="color: maroon">on GitHub</a>. As part of this algorithm, it's 
+											interesting to visualise the flow of preferences with an alluvial diagram, as you can see below. 
+										</p>
+										<a href="files/Visualisations/Other/preferential_voting.png" class="image featured"><img src="files/Visualisations/Other/preferential_voting.png" alt="" /></a>
 									</article>
 
 							</div>
 							<div class="col-4 col-12-narrower">
-
 								<!-- Sidebar -->
 									<section id="sidebar">
 										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/orbit_spiral.gif" alt="" /></a>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
+											<a href="files/Visualisations/Other/Simulated Universe/FRI lobe.png" class="image featured"><img src="files/Visualisations/Other/Simulated Universe/FRI lobe.png" alt="" /></a>
 											<p>
-												Colliding wind binaries are extremely dynamic and change appearance over orbital timescales. Here I show, using my 
-												<a href="https://ryanwhite1.github.io/xenomorph/" style="color:maroon">xenomorph</a> python package, how the orbiting 
-												of the stars can impact colliding wind nebulae.
+												As part of my universe simulation, I had to think of a way to cheaply emulate AGN jets out of some galaxies. This involved a basic phenomenological prescription,
+												which I could then visualise through a contour plot. 
 											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
 										</section>
 										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/Apep_evolution_pretty.gif" alt="" /></a>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
+											<a href="files/Visualisations/Other/Simulated Universe/galaxradialvels.jpg" class="image featured"><img src="files/Visualisations/Other/Simulated Universe/galaxradialvels.jpg" alt="" /></a>
 											<p>
-												The system that I've studied the most is the <a href="https://en.wikipedia.org/wiki/Apep_(star_system)" style="color:maroon">Apep system</a>. 
-												In my <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250714610W/abstract" style="color:maroon">recent paper</a> on the system, we figured
-												out the best yet orbital solution of the WR+WR binary. Using xenomorph, we can then simulate the orbital evolution of the stars and the nebula they create.
+												One really effective way to visualise the kinematics of stars within galaxies is to plot their positions with the colour as a function of their radial velocity. 
+												In this plot, red are stars moving away from and blue towards the viewer. You can clearly see the rotation gradient within spiral galaxies in the image, and the 
+												random dynamics within elliptical galaxies, which tells you all about their formation histories. 
 											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
-										</section>
-										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/CWBs/Apep_Rotate_Gif.gif" alt="" /></a>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
-											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
-											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
-										</section>
-										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/BHs/MigrationTraps-alph0.01.png" alt="" /></a>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
-											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
-											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
-										</section>
-										<section>
-											<a href="#" class="image featured"><img src="files/Visualisations/Research Visualisations/BHs/BH_Effective_Spins.png" alt="" /></a>
-											<!-- <header>
-												<h3>Elit sed feugiat</h3>
-											</header> -->
-											<p>
-												A main result of our recent Apep paper is that there is a third star in the system whose wind and ionising radiation destroy the dust in a section of the nebula. 
-												I expanded the xenomorph code to handle this kind of interaction, and by rotating the simulation you can clearly see the circular cavity imprinted on the nebula geometry.
-											</p>
-											<!-- <ul class="actions">
-												<li><a href="#" class="button">Magna amet nullam</a></li>
-											</ul> -->
 										</section>
 									</section>
 
